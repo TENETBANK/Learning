@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>英语学习四年规划 · 8-12岁</title>
+<style>
+  :root{
+    --bg:#f4f6fb;
+    --card:#ffffff;
+    --text:#1f2937;
+    --muted:#6b7280;
+    --line:#e5e7eb;
+    --brand:#4f46e5;
+    --brand2:#7c3aed;
+    --brand-light:#eef2ff;
+    --s0:#8b5cf6;
+    --s1:#0891b2;
+    --s2:#059669;
+    --s3:#d97706;
+    --s4:#dc2626;
+    --radius:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background:
+      radial-gradient(1200px 600px at 10% -10%, #e0e7ff 0%, transparent 50%),
+      radial-gradient(1000px 500px at 100% 0%, #fce7f3 0%, transparent 45%),
+      var(--bg);
+    color:var(--text);
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1120px;margin:0 auto;padding:24px 16px 90px}
+
+  /* ===== Header ===== */
+  header{
+    position:relative;
+    background:linear-gradient(135deg,#312e81 0%,#4f46e5 45%,#7c3aed 100%);
+    color:#fff;border-radius:24px;padding:36px 30px 30px;margin-bottom:22px;
+    overflow:hidden;
+    box-shadow:0 18px 40px rgba(79,70,229,.28);
+  }
+  header::before{
+    content:"";position:absolute;right:-60px;top:-80px;
+    width:260px;height:260px;border-radius:50%;
+    background:radial-gradient(circle,rgba(255,255,255,.22),transparent 70%);
+  }
+  header::after{
+    content:"";position:absolute;left:-40px;bottom:-90px;
+    width:220px;height:220px;border-radius:50%;
+    background:radial-gradient(circle,rgba(236,72,153,.25),transparent 70%);
+  }
+  header h1{position:relative;font-size:27px;font-weight:800;letter-spacing:.4px;margin-bottom:8px}
+  header p{position:relative;opacity:.92;font-size:14px;max-width:780px}
+  .badges{position:relative;display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .badge{
+    background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);
+    padding:5px 13px;border-radius:999px;font-size:12.5px;font-weight:600;
+    backdrop-filter:blur(6px);
+  }
+
+  /* ===== Notice ===== */
+  .notice{
+    background:#fffbeb;border:1px solid #fde68a;border-left:5px solid #f59e0b;
+    padding:15px 18px;border-radius:14px;font-size:13.5px;color:#92400e;margin-bottom:22px;
+  }
+  .notice strong{color:#78350f}
+
+  /* ===== Nav ===== */
+  nav{
+    position:sticky;top:0;z-index:60;
+    background:rgba(244,246,251,.88);
+    backdrop-filter:blur(12px);
+    padding:10px 0;margin-bottom:22px;
+    border-bottom:1px solid rgba(229,231,235,.8);
+  }
+  .nav-inner{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:0 2px}
+  .nav-inner::-webkit-scrollbar{display:none}
+  .nav-btn{
+    flex:0 0 auto;border:1px solid var(--line);background:#fff;color:var(--muted);
+    padding:8px 16px;border-radius:999px;font-size:13px;font-weight:600;
+    cursor:pointer;transition:.2s;white-space:nowrap;
+  }
+  .nav-btn:hover{border-color:var(--brand);color:var(--brand);transform:translateY(-1px)}
+  .nav-btn.active{
+    background:linear-gradient(135deg,var(--brand),var(--brand2));
+    border-color:transparent;color:#fff;
+    box-shadow:0 6px 16px rgba(79,70,229,.35);
+  }
+
+  /* ===== Generic panel ===== */
+  .panel{
+    background:var(--card);border-radius:var(--radius);
+    padding:24px;margin-bottom:24px;
+    border:1px solid var(--line);
+    box-shadow:0 4px 18px rgba(17,24,39,.05);
+  }
+  .panel h2{
+    font-size:19px;margin-bottom:16px;color:var(--text);
+    display:flex;align-items:center;gap:8px;
+  }
+  .panel h3{font-size:15px;margin:20px 0 10px;color:#1e293b}
+  .panel ul{list-style:none;font-size:13.5px}
+  .panel li{padding:5px 0 5px 20px;position:relative;color:#374151}
+  .panel li::before{
+    content:"";position:absolute;left:2px;top:12px;
+    width:6px;height:6px;border-radius:50%;background:#c7d2fe;
+  }
+
+  /* ===== Table ===== */
+  .table-wrap{overflow-x:auto;border-radius:12px;border:1px solid var(--line)}
+  table{width:100%;border-collapse:collapse;font-size:13px;min-width:720px}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{
+    background:linear-gradient(135deg,#eef2ff,#f5f3ff);
+    font-weight:700;color:#3730a3;font-size:12.5px;white-space:nowrap;
+  }
+  tr:last-child td{border-bottom:none}
+  tbody tr:nth-child(even){background:#fafbff}
+  tbody tr:hover{background:#f5f7ff}
+  td:first-child{font-weight:700;white-space:nowrap}
+
+  /* ===== Timeline (daily flow) ===== */
+  .timeline{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:12px;
+    position:relative;margin:8px 0 4px;
+  }
+  .timeline::before{
+    content:"";position:absolute;left:6%;right:6%;top:34px;
+    border-top:2px dashed #c7d2fe;z-index:0;
+  }
+  .tl-item{position:relative;z-index:1;text-align:center}
+  .tl-dot{
+    width:46px;height:46px;margin:0 auto 10px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:20px;background:#fff;border:2px solid #c7d2fe;
+    box-shadow:0 6px 14px rgba(79,70,229,.15);
+  }
+  .tl-card{
+    background:#fff;border:1px solid var(--line);border-radius:14px;
+    padding:12px 10px;font-size:12.5px;color:#374151;
+    box-shadow:0 2px 8px rgba(17,24,39,.04);
+    min-height:96px;
+    transition:.2s;
+  }
+  .tl-card:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(79,70,229,.12)}
+  .tl-card strong{display:block;font-size:13px;color:#312e81;margin-bottom:4px}
+  .tl-card em{font-style:normal;color:#6b7280;font-size:11.5px}
+
+  @media(max-width:760px){
+    .timeline{grid-template-columns:1fr 1fr}
+    .timeline::before{display:none}
+    .tl-card{min-height:auto}
+  }
+
+  /* ===== Week cards ===== */
+  .week-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+  .day-card{
+    background:linear-gradient(180deg,#ffffff,#fbfcff);
+    border:1px solid var(--line);border-radius:16px;padding:16px;
+    box-shadow:0 3px 10px rgba(17,24,39,.04);
+    transition:.22s;
+  }
+  .day-card:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(79,70,229,.1)}
+  .day-card h5{
+    font-size:13.5px;color:#312e81;margin-bottom:10px;
+    display:flex;align-items:center;gap:6px;
+  }
+  .day-card h5 .pill{
+    font-size:10.5px;background:#eef2ff;color:#4338ca;
+    padding:2px 8px;border-radius:999px;font-weight:700;
+  }
+  .day-card p{font-size:12.5px;color:#4b5563;margin-bottom:6px}
+  .day-card b{color:#1f2937}
+
+  /* ===== Stage card ===== */
+  .stage{
+    background:var(--card);border-radius:var(--radius);margin-bottom:20px;
+    border:1px solid var(--line);overflow:hidden;
+    box-shadow:0 4px 18px rgba(17,24,39,.05);
+    scroll-margin-top:76px;
+  }
+  .stage-head{
+    display:flex;align-items:center;gap:14px;padding:20px 22px;
+    cursor:pointer;user-select:none;transition:.2s;
+  }
+  .stage-head:hover{background:#fafbff}
+  .dot{
+    width:14px;height:14px;border-radius:50%;flex:0 0 auto;
+    box-shadow:0 0 0 4px rgba(0,0,0,.06);
+  }
+  .stage-title{flex:1}
+  .stage-title h3{font-size:17px;font-weight:800;margin-bottom:2px}
+  .stage-title .sub{font-size:12.5px;color:var(--muted)}
+  .chev{width:24px;height:24px;flex:0 0 auto;transition:transform .3s;color:var(--muted)}
+  .stage.open .chev{transform:rotate(180deg)}
+  .stage-body{display:none;padding:0 22px 24px;border-top:1px solid var(--line)}
+  .stage.open .stage-body{display:block;animation:fade .3s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+
+  .goal-bar{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 20px}
+  .goal-chip{
+    background:var(--brand-light);color:#3730a3;border:1px solid #c7d2fe;
+    padding:8px 14px;border-radius:10px;font-size:13px;font-weight:600;
+  }
+  .goal-chip span{display:block;font-size:11px;color:#818cf8;font-weight:600;margin-bottom:1px}
+
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+
+  .block{background:#fafbff;border:1px solid var(--line);border-radius:12px;padding:16px}
+  .block.full{grid-column:1/-1}
+  .block h4{
+    font-size:13px;font-weight:800;color:var(--brand);margin-bottom:10px;
+    display:flex;align-items:center;gap:6px;letter-spacing:.3px;
+  }
+  .block ul{list-style:none;font-size:13.5px}
+  .block li{padding:5px 0 5px 18px;position:relative;color:#374151}
+  .block li::before{
+    content:"";position:absolute;left:2px;top:12px;
+    width:6px;height:6px;border-radius:50%;background:#c7d2fe;
+  }
+  .block li strong{color:#111827}
+
+  .buy{
+    background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;
+    padding:14px 16px;margin-top:16px;font-size:13.5px;color:#166534;
+  }
+  .buy strong{display:block;margin-bottom:4px;color:#14532d}
+
+  .result{
+    background:#fef2f2;border:1px solid #fecaca;border-radius:12px;
+    padding:14px 16px;margin-top:12px;
+  }
+  .result h4{color:#dc2626}
+  .result li::before{background:#fca5a5}
+
+  /* ===== Word progress ===== */
+  .progress-row{
+    display:flex;flex-wrap:wrap;gap:12px;margin:6px 0 18px;
+  }
+  .progress-item{
+    flex:1 1 200px;background:#fff;border:1px solid var(--line);
+    border-radius:14px;padding:14px 16px;
+  }
+  .progress-item .label{font-size:12px;color:#6b7280;margin-bottom:6px}
+  .progress-item .big{font-size:20px;font-weight:800;color:#312e81}
+  .progress-bar{
+    height:8px;border-radius:999px;background:#eef2ff;margin-top:10px;overflow:hidden;
+  }
+  .progress-bar > i{
+    display:block;height:100%;border-radius:999px;
+    background:linear-gradient(90deg,#818cf8,#c084fc);
+  }
+
+  .footer-note{
+    background:#fff;border:1px dashed #c7d2fe;border-radius:16px;
+    padding:20px 22px;font-size:13.5px;color:#475569;margin-top:24px;
+  }
+  .footer-note h3{font-size:15px;color:#1e293b;margin-bottom:8px}
+
+  @media print{
+    body{background:#fff}
+    nav,.chev{display:none}
+    .stage-body{display:block!important}
+    .stage{break-inside:avoid;box-shadow:none}
+    header{box-shadow:none}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>英语学习四年规划 · 8→12岁</h1>
+    <p>目标：12岁前雅思模考冲刺 7.0–7.5（能力先行、证书后置）。按 KET → PET → FCE → 雅思 四阶段推进，每天 60–90 分钟，季度评估，睡眠和腰旗训练不砍。0阶段已细化到每天、每个单元、每个音频。</p>
+    <div class="badges">
+      <span class="badge">0阶段逐日细化</span>
+      <span class="badge">第1年 KET</span>
+      <span class="badge">第2年 PET</span>
+      <span class="badge">第3年 FCE</span>
+      <span class="badge">第4年 雅思</span>
+      <span class="badge">每季度复盘</span>
+    </div>
+  </header>
+
+  <div class="notice">
+    <strong>先说前提：</strong>12岁前雅思7.5是“冲刺上限目标”，不是靠计划就能保证的结果。7.5≈CEFR C1，词汇通常需 8000–10000，写作口语对12岁孩子尤其难。正式雅思成绩有效期仅2年，<strong>建议能力先到、证书后置</strong>，申请前1–2年再考。若孩子已有PET水平，可整体压缩6–12个月。
+  </div>
+
+  <nav>
+    <div class="nav-inner">
+      <button class="nav-btn active" data-target="overview">总览</button>
+      <button class="nav-btn" data-target="principles">总原则</button>
+      <button class="nav-btn" data-target="s0">0阶段</button>
+      <button class="nav-btn" data-target="daily">0阶段·逐日</button>
+      <button class="nav-btn" data-target="s1">第1年 KET</button>
+      <button class="nav-btn" data-target="s2">第2年 PET</button>
+      <button class="nav-btn" data-target="s3">第3年 FCE</button>
+      <button class="nav-btn" data-target="s4">第4年 雅思</button>
+      <button class="nav-btn" data-target="rules">复盘规则</button>
+    </div>
+  </nav>
+
+  <!-- ================= OVERVIEW ================= -->
+  <section id="overview" class="panel">
+    <h2>📊 四年阶段总表</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>阶段</th><th>时间</th><th>核心内容</th><th>具体结果（验收标准）</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="color:#8b5cf6">0阶段</td><td>0–3个月</td>
+            <td>基线测试、自然拼读、分级阅读习惯、听说输入</td>
+            <td>蓝思300–500L；能读RAZ D–J；跟读复述1分钟；写5–8句自我介绍</td>
+          </tr>
+          <tr>
+            <td style="color:#0891b2">第1年</td><td>8–9岁</td>
+            <td>自然拼读巩固、分级阅读、KET词汇语法、简单写作</td>
+            <td>KET真题通过/优秀；词汇1500–2000；蓝思500–700L；写50–80词邮件；口语说1–2分钟</td>
+          </tr>
+          <tr>
+            <td style="color:#059669">第2年</td><td>9–10岁</td>
+            <td>章节书、PET词汇语法、段落写作、听力笔记</td>
+            <td>PET真题通过/优秀；词汇2500–3500；蓝思700–900L；写100–150词短文；复述3分钟故事</td>
+          </tr>
+          <tr>
+            <td style="color:#d97706">第3年</td><td>10–11岁</td>
+            <td>FCE学术阅读、语法体系、议论文结构、口语讨论</td>
+            <td>FCE真题通过；词汇4000–6000；蓝思900–1100L；写180–220词观点文；讨论利弊</td>
+          </tr>
+          <tr>
+            <td style="color:#dc2626">第4年</td><td>11–12岁</td>
+            <td>雅思四科题型、模考、弱项修补、速度训练</td>
+            <td>雅思模考总分6.5→7.0→7.5；词汇8000+；蓝思1100–1300L；写作250词；口语说2–3分钟</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ================= PRINCIPLES ================= -->
+  <section id="principles" class="panel">
+    <h2>🎯 总目标与总原则</h2>
+    <h3>总目标拆解</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>项目</th><th>目标</th></tr></thead>
+        <tbody>
+          <tr><td>最终冲刺</td><td>12岁前雅思模考总分7.0–7.5；正式雅思建议申请前再考，因为成绩有效期2年</td></tr>
+          <tr><td>能力主线</td><td>11岁前达到FCE（B2）优秀，12岁冲C1</td></tr>
+          <tr><td>阶段证书</td><td>9岁KET优秀/卓越；10岁PET通过/优秀；11岁FCE通过</td></tr>
+          <tr><td>每日投入</td><td>第1年60分钟；第2年75分钟；第3年90分钟；第4年90–120分钟</td></tr>
+          <tr><td>周投入</td><td>外加周末1次项目/模考，每周2次外教口语</td></tr>
+          <tr><td>红线</td><td>睡眠9–11小时；腰旗训练不砍；连续两周明显排斥英语→降量调整</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>总原则</h3>
+    <ul>
+      <li><strong>睡眠优先：</strong>8–12岁每天9–11小时睡眠，睡不够，英语和训练都白搭。</li>
+      <li><strong>不把计划排成密不透风的表：</strong>英语每天有“输入+输出”，但不拆成五门课硬堆时间。</li>
+      <li><strong>英语每天有输入+输出：</strong>阅读打底、听力输入、口语输出、写作周练，四项组合推进。</li>
+      <li><strong>每季度评估一次：</strong>英语用剑桥分级/雅思模考；腰旗用体测+比赛录像+教练评估。</li>
+      <li><strong>设红线：</strong>连续两周睡眠不足、情绪明显低落、食欲下降、频繁伤病、英语排斥明显——降量调整，不硬冲。</li>
+    </ul>
+  </section>
+
+  <!-- ================= STAGE 0 OVERVIEW ================= -->
+  <section id="s0" class="stage open">
+    <div class="stage-head">
+      <div class="dot" style="background:#8b5cf6"></div>
+      <div class="stage-title">
+        <h3>0阶段 · 打基线（0–3个月 / 12周）</h3>
+        <div class="sub">不急着冲雅思，先建立“每天英语”的习惯；每天5个新词、15个复习词</div>
+      </div>
+      <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+    <div class="stage-body">
+      <div class="goal-bar">
+        <div class="goal-chip"><span>每日投入</span>60分钟</div>
+        <div class="goal-chip"><span>外教</span>2次×25分钟/周</div>
+        <div class="goal-chip"><span>新词</span>5个/天</div>
+        <div class="goal-chip"><span>复习词</span>15个/天</div>
+        <div class="goal-chip"><span>12周词汇</span>约300个</div>
+      </div>
+
+      <div class="progress-row">
+        <div class="progress-item">
+          <div class="label">每天新词</div>
+          <div class="big">5 个</div>
+          <div class="progress-bar"><i style="width:25%"></i></div>
+        </div>
+        <div class="progress-item">
+          <div class="label">每天复习词</div>
+          <div class="big">15 个</div>
+          <div class="progress-bar"><i style="width:65%"></i></div>
+        </div>
+        <div class="progress-item">
+          <div class="label">每周新词</div>
+          <div class="big">25 个</div>
+          <div class="progress-bar"><i style="width:50%"></i></div>
+        </div>
+        <div class="progress-item">
+          <div class="label">12周累计</div>
+          <div class="big">≈300 词</div>
+          <div class="progress-bar"><i style="width:85%"></i></div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <h4>📚 学习内容</h4>
+          <ul>
+            <li><strong>基线：</strong>剑桥分级测试、蓝思阅读测试、口语录音、写作样本</li>
+            <li><strong>自然拼读：</strong>字母音、常见组合、拼读规则</li>
+            <li><strong>阅读：</strong>RAZ/牛津树分级，每天1本精读+1本泛读</li>
+            <li><strong>听力：</strong>每天晨间15分钟分级音频</li>
+            <li><strong>口语：</strong>跟读、复述、外教问答</li>
+            <li><strong>写作：</strong>从句子仿写开始（自我介绍、我的一天、我的运动）</li>
+            <li><strong>体育英语：</strong>每周10分钟腰旗术语卡片</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h4>📖 教材配置</h4>
+          <ul>
+            <li><strong>主教材：</strong>Oxford Phonics World 1–3；Super Minds 1–2 或 Kid's Box 3–4</li>
+            <li><strong>词汇：</strong>Oxford Picture Dictionary 儿童版</li>
+            <li><strong>语法：</strong>Oxford Grammar for Schools 1</li>
+            <li><strong>阅读：</strong>RAZ aa–J；牛津树1–5</li>
+            <li><strong>听力/口语：</strong>Storynory；外教问答</li>
+            <li><strong>写作：</strong>句子仿写练习纸</li>
+            <li><strong>测评：</strong>剑桥分级测试、蓝思测试</li>
+          </ul>
+        </div>
+
+        <div class="block full">
+          <h4>🗓 每天固定流程（周一至周五）</h4>
+          <ul>
+            <li><strong>晨听15分钟：</strong>按当天安排听音频，不跟读、不查词，起床/早餐时放</li>
+            <li><strong>放学阅读20分钟：</strong>5分钟拼读/单词复习 + 10分钟精读 + 5分钟泛读/跟读</li>
+            <li><strong>晚上15分钟：</strong>5分钟单词复习 + 10分钟口语或写作（单日口语、双日写作）</li>
+            <li><strong>睡前10分钟：</strong>裸听当天或本周音频，不要求输出，听着入睡</li>
+            <li><strong>单词方法：</strong>看图说词、听音指图、拼读拆音、造一个短句；不抄10遍</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>12周每周内容表（具体到单元、级别、主题）</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>周</th><th>OPW单元</th><th>每天5词主题（每周25词）</th>
+              <th>RAZ级别</th><th>牛津树</th><th>口语主题</th><th>写作主题</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>OPW 1 Unit 1</td><td>字母音 a–e；颜色</td><td>RAZ aa/A</td><td>牛津树1</td><td>打招呼、名字、颜色</td><td>I am… / It is…</td></tr>
+            <tr><td>2</td><td>OPW 1 Unit 2</td><td>字母音 f–j；数字1–10</td><td>RAZ A</td><td>牛津树1</td><td>数字、年龄</td><td>I have…</td></tr>
+            <tr><td>3</td><td>OPW 1 Unit 3</td><td>字母音 k–o；家庭</td><td>RAZ A/B</td><td>牛津树1–2</td><td>家庭成员</td><td>This is my…</td></tr>
+            <tr><td>4</td><td>OPW 1 Unit 4</td><td>字母音 p–t；身体部位</td><td>RAZ B</td><td>牛津树2</td><td>身体、动作</td><td>I can…</td></tr>
+            <tr><td>5</td><td>OPW 1 Unit 5</td><td>字母音 u–z；学校用品</td><td>RAZ B/C</td><td>牛津树2</td><td>学校、文具</td><td>I like…</td></tr>
+            <tr><td>6</td><td>OPW 1 Unit 6</td><td>短元音a；食物</td><td>RAZ C</td><td>牛津树2–3</td><td>食物喜好</td><td>I like/don’t like…</td></tr>
+            <tr><td>7</td><td>OPW 1 Unit 7</td><td>短元音e；动物</td><td>RAZ C/D</td><td>牛津树3</td><td>动物、宠物</td><td>I see… / It has…</td></tr>
+            <tr><td>8</td><td>OPW 1 Unit 8</td><td>短元音i；天气</td><td>RAZ D</td><td>牛津树3</td><td>天气、衣服</td><td>It is… / I wear…</td></tr>
+            <tr><td>9</td><td>OPW 2 Unit 1</td><td>短元音o；动作指令</td><td>RAZ D/E</td><td>牛津树3–4</td><td>动作、指令</td><td>I run/jump/play…</td></tr>
+            <tr><td>10</td><td>OPW 2 Unit 2</td><td>短元音u；运动</td><td>RAZ E</td><td>牛津树4</td><td>运动、腰旗术语</td><td>I play… / I can…</td></tr>
+            <tr><td>11</td><td>OPW 2 Unit 3</td><td>复习短元音；我的一天</td><td>RAZ E/F</td><td>牛津树4</td><td>我的一天</td><td>My day（5句）</td></tr>
+            <tr><td>12</td><td>OPW 2 Unit 4</td><td>高频词总复习</td><td>RAZ F</td><td>牛津树4–5</td><td>综合展示</td><td>My sport / My family（5–8句）</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="result">
+        <h4>✅ 具体结果（验收标准）</h4>
+        <ul>
+          <li>能独立拼读常见CVC单词</li>
+          <li>能读RAZ D–J级别</li>
+          <li>能写5–8句自我介绍</li>
+          <li>能跟读并复述1分钟内容</li>
+          <li>建立“每天英语”习惯，不排斥</li>
+          <li>第4周末：能读RAZ B、写3–5句、说1分钟自我介绍</li>
+          <li>第8周末：能读RAZ D、写5句、认读约200词</li>
+          <li>第12周末：能读RAZ F左右、写5–8句、敢用英语介绍腰旗1分钟</li>
+        </ul>
+      </div>
+
+      <div class="buy">
+        <strong>🛒 最小购买清单</strong>
+        Oxford Phonics World 1–3 + RAZ/牛津树 + Oxford Grammar for Schools 1 + 外教课
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STAGE 0 DAILY ================= -->
+  <section id="daily" class="panel">
+    <h2>🗓 0阶段 · 逐日执行</h2>
+    <p style="font-size:13.5px;color:#4b5563;margin-bottom:16px">
+      每天四段固定节奏：<strong>晨听 → 放学阅读 → 晚上口语/写作 → 睡前裸听</strong>。
+      单日口语、双日写作；周五做展示+听写；周末轻量复盘。
+    </p>
+
+    <h3>每天四段时间轴</h3>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot">🌅</div>
+        <div class="tl-card">
+          <strong>晨听 15分钟</strong>
+          <em>按当天安排放音频</em>
+          <div style="margin-top:6px;color:#6b7280;font-size:12px">不跟读、不查词，起床/早餐时放</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">📖</div>
+        <div class="tl-card">
+          <strong>放学阅读 20分钟</strong>
+          <em>5+10+5 结构</em>
+          <div style="margin-top:6px;color:#6b7280;font-size:12px">5分钟拼读/单词 + 10分钟精读 + 5分钟泛读/跟读</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">✍️</div>
+        <div class="tl-card">
+          <strong>晚上 15分钟</strong>
+          <em>5分钟单词 + 10分钟输出</em>
+          <div style="margin-top:6px;color:#6b7280;font-size:12px">单日口语、双日写作；周五展示+听写</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot">🌙</div>
+        <div class="tl-card">
+          <strong>睡前 10分钟</strong>
+          <em>裸听当天/本周音频</em>
+          <div style="margin-top:6px;color:#6b7280;font-size:12px">不要求输出，听着入睡</div>
+        </div>
+      </div>
+    </div>
+
+    <h3>第1周逐日示例（照这个执行）</h3>
+    <div class="week-grid">
+      <div class="day-card">
+        <h5>周一 <span class="pill">口语日</span></h5>
+        <p><b>晨听：</b>OPW 1 Unit 1 音频</p>
+        <p><b>阅读：</b>RAZ aa《I See Colors》精读 + 牛津树1泛读</p>
+        <p><b>晚上：</b>口语 Hello/name/colors + 5词（a, apple, red, blue, cat）</p>
+        <p><b>睡前：</b>同RAZ音频</p>
+      </div>
+      <div class="day-card">
+        <h5>周二 <span class="pill">写作日</span></h5>
+        <p><b>晨听：</b>Super Minds 1 Unit 1 歌曲</p>
+        <p><b>阅读：</b>同一本RAZ复述 + 牛津树1</p>
+        <p><b>晚上：</b>写作抄写 “I am ___. I like red.”</p>
+        <p><b>睡前：</b>Super Minds音频</p>
+      </div>
+      <div class="day-card">
+        <h5>周三 <span class="pill">口语日</span></h5>
+        <p><b>晨听：</b>RAZ A音频</p>
+        <p><b>阅读：</b>RAZ A新本精读 + 牛津树1</p>
+        <p><b>晚上：</b>口语颜色+数字 + 5词（one, two, dog, ball, yellow）</p>
+        <p><b>睡前：</b>RAZ音频</p>
+      </div>
+      <div class="day-card">
+        <h5>周四 <span class="pill">写作日</span></h5>
+        <p><b>晨听：</b>牛津树1音频</p>
+        <p><b>阅读：</b>同一本RAZ复述 + 牛津树1</p>
+        <p><b>晚上：</b>写作填空 “I have ___. It is ___.”</p>
+        <p><b>睡前：</b>牛津树音频</p>
+      </div>
+      <div class="day-card">
+        <h5>周五 <span class="pill">展示+听写</span></h5>
+        <p><b>晨听：</b>Storynory短故事</p>
+        <p><b>阅读：</b>RAZ A新本 + 本周词回顾</p>
+        <p><b>晚上：</b>口语展示5句 + 听写5词</p>
+        <p><b>睡前：</b>Storynory</p>
+      </div>
+      <div class="day-card">
+        <h5>周六 <span class="pill">轻量项目</span></h5>
+        <p><b>晨听：</b>本周音频合集15分钟</p>
+        <p><b>阅读：</b>自选2本泛读</p>
+        <p><b>晚上：</b>画图+写3句 / 录1分钟视频</p>
+        <p><b>睡前：</b>自选故事</p>
+      </div>
+      <div class="day-card">
+        <h5>周日 <span class="pill">家庭放松</span></h5>
+        <p><b>晨听：</b>休息/家庭复习</p>
+        <p><b>阅读：</b>孩子选最喜欢的一本读给家长</p>
+        <p><b>晚上：</b>不排任务，家庭放松</p>
+        <p><b>睡前：</b>可选中文故事</p>
+      </div>
+    </div>
+
+    <div class="grid" style="margin-top:18px">
+      <div class="block">
+        <h4>🗣 口语10分钟具体练什么</h4>
+        <ul>
+          <li><strong>周一：</strong>本周主题问答/图片描述（自我介绍、颜色数字、家庭、学校、食物、运动、天气、动物、身体、我的一天）</li>
+          <li><strong>周三：</strong>腰旗术语 <b>snap, pass, catch, run, pull the flag, touchdown, huddle</b>，玩“你说我猜”</li>
+          <li><strong>周五：</strong>用5–8句展示本周主题，家长只鼓励不纠错，录音存档</li>
+          <li><strong>原则：</strong>先敢说，再说完美；不打断、不逐句纠错</li>
+        </ul>
+      </div>
+      <div class="block">
+        <h4>✍️ 写作10分钟具体写什么</h4>
+        <ul>
+          <li><strong>第1–4周：</strong>抄写+填空，如 “I am ___. I like ___. I have ___.”</li>
+          <li><strong>第5–8周：</strong>仿写5句，如 “I like apples. I don’t like onions. I play football.”</li>
+          <li><strong>第9–12周：</strong>写5–8句小段，如 “My day / My sport / My family / My favorite food.”</li>
+          <li><strong>频率：</strong>每周二、四各1次；周五不写，只做口语展示</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <h3>执行提醒</h3>
+      如果孩子起步慢：第1–8周只做OPW 1，RAZ到C即可；第9–12周再进OPW 2。如果孩子已有基础：OPW 1可压缩到4–6周，RAZ可跳到D–J，但每天5新词+15复习不变。晨听和睡前听就用当天对应教材/分级音频，不需要另买听力书；Storynory周五用。
+    </div>
+  </section>
+
+  <!-- ================= STAGE 1 ================= -->
+  <section id="s1" class="stage">
+    <div class="stage-head">
+      <div class="dot" style="background:#0891b2"></div>
+      <div class="stage-title">
+        <h3>第1年 · KET年（8–9岁）</h3>
+        <div class="sub">分级阅读+自然拼读巩固，目标KET优秀</div>
+      </div>
+      <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+    <div class="stage-body">
+      <div class="goal-bar">
+        <div class="goal-chip"><span>每日投入</span>60分钟</div>
+        <div class="goal-chip"><span>外教</span>2次×25分钟/周</div>
+        <div class="goal-chip"><span>阶段证书</span>KET优秀/卓越</div>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <h4>📚 学习内容</h4>
+          <ul>
+            <li><strong>词汇：</strong>KET核心1500–2000词，按主题（家庭、学校、运动、食物）</li>
+            <li><strong>语法：</strong>一般现在时、现在进行时、过去时、比较级、情态动词基础</li>
+            <li><strong>阅读：</strong>分级书+简单章节书，精读抓主旨和细节</li>
+            <li><strong>听力：</strong>KET听力题型、日常对话、短故事</li>
+            <li><strong>口语：</strong>外教问答、图片描述、每天复述</li>
+            <li><strong>写作：</strong>每周2次，句子→50–80词邮件/短文</li>
+            <li><strong>体育英语：</strong>snap/pass/catch/pull the flag/touchdown 卡片游戏</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h4>📖 教材配置</h4>
+          <ul>
+            <li><strong>主教材：</strong>Prepare Level 2–3 或 Complete Key for Schools</li>
+            <li><strong>词汇：</strong>KET核心词汇；4000 Essential English Words 1</li>
+            <li><strong>语法：</strong>Oxford Grammar for Schools 1–2</li>
+            <li><strong>阅读：</strong>RAZ J–M；牛津树6–9；Magic Tree House</li>
+            <li><strong>听力/口语：</strong>KET听力真题；外教25分钟</li>
+            <li><strong>写作：</strong>Complete Key 写作部分</li>
+            <li><strong>真题：</strong>Cambridge KET for Schools Authentic Practice Tests 1–2</li>
+          </ul>
+        </div>
+
+        <div class="block full">
+          <h4>🗓 每周安排</h4>
+          <ul>
+            <li><strong>晨听：</strong>15分钟×5</li>
+            <li><strong>阅读：</strong>20分钟×5</li>
+            <li><strong>晚上：</strong>15分钟×5（周一三五口语，周二四写作）</li>
+            <li><strong>外教：</strong>2次×25分钟</li>
+            <li><strong>周六：</strong>KET真题1套或阅读项目</li>
+            <li><strong>周日：</strong>复盘+自由阅读</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="result">
+        <h4>✅ 具体结果（验收标准）</h4>
+        <ul>
+          <li>KET真题通过/优秀</li>
+          <li>词汇1500–2000</li>
+          <li>蓝思500–700L</li>
+          <li>能读《Magic Tree House》级别</li>
+          <li>能写50–80词邮件</li>
+          <li>口语能就熟悉话题说1–2分钟</li>
+          <li>每季度1次写作样本+口语录音存档</li>
+        </ul>
+      </div>
+
+      <div class="buy">
+        <strong>🛒 最小购买清单</strong>
+        Prepare 2–3 或 Complete Key + KET核心词汇 + Oxford Grammar for Schools 1–2 + KET真题1–2 + Magic Tree House
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STAGE 2 ================= -->
+  <section id="s2" class="stage">
+    <div class="stage-head">
+      <div class="dot" style="background:#059669"></div>
+      <div class="stage-title">
+        <h3>第2年 · PET年（9–10岁）</h3>
+        <div class="sub">进入章节书，段落写作，目标PET优秀</div>
+      </div>
+      <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+    <div class="stage-body">
+      <div class="goal-bar">
+        <div class="goal-chip"><span>每日投入</span>75分钟</div>
+        <div class="goal-chip"><span>外教</span>2次×30分钟/周</div>
+        <div class="goal-chip"><span>阶段证书</span>PET通过/优秀</div>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <h4>📚 学习内容</h4>
+          <ul>
+            <li><strong>词汇：</strong>PET核心2500–3500词，增加学术词和短语动词</li>
+            <li><strong>语法：</strong>完成时、被动语态、条件句、定语从句基础</li>
+            <li><strong>阅读：</strong>章节书、PET阅读题型、科普短文</li>
+            <li><strong>听力：</strong>PET听力、新闻简讯、播客儿童版</li>
+            <li><strong>口语：</strong>讨论、比较图片、给建议</li>
+            <li><strong>写作：</strong>每周2次，100–150词故事/邮件/观点段</li>
+            <li><strong>体育英语：</strong>用英语介绍一场腰旗比赛，10分钟/周</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h4>📖 教材配置</h4>
+          <ul>
+            <li><strong>主教材：</strong>Prepare Level 4–5 或 Complete Preliminary for Schools</li>
+            <li><strong>词汇：</strong>PET核心词汇；4000 Essential English Words 2–3</li>
+            <li><strong>语法：</strong>Oxford Grammar for Schools 3–4</li>
+            <li><strong>阅读：</strong>RAZ N–Q；Magic Tree House；Dog Man；Roald Dahl简写本</li>
+            <li><strong>听力/口语：</strong>PET听力真题；BBC Learning English；外教30分钟</li>
+            <li><strong>写作：</strong>Complete Preliminary 写作部分</li>
+            <li><strong>真题：</strong>Cambridge PET for Schools Authentic Practice Tests 1–2</li>
+          </ul>
+        </div>
+
+        <div class="block full">
+          <h4>🗓 每周安排</h4>
+          <ul>
+            <li><strong>晨听：</strong>15分钟×5</li>
+            <li><strong>阅读：</strong>25分钟×5</li>
+            <li><strong>晚上：</strong>20分钟×5（口语/写作交替）</li>
+            <li><strong>外教：</strong>2次×30分钟</li>
+            <li><strong>周六：</strong>PET真题1套或项目</li>
+            <li><strong>周日：</strong>复盘</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="result">
+        <h4>✅ 具体结果（验收标准）</h4>
+        <ul>
+          <li>PET真题通过/优秀</li>
+          <li>词汇2500–3500</li>
+          <li>蓝思700–900L</li>
+          <li>能写100–150词短文</li>
+          <li>能复述3分钟故事</li>
+          <li>能就“运动/学校/兴趣”做2分钟连贯表达</li>
+        </ul>
+      </div>
+
+      <div class="buy">
+        <strong>🛒 最小购买清单</strong>
+        Prepare 4–5 或 Complete Preliminary + PET核心词汇 + Oxford Grammar for Schools 3–4 + PET真题1–2 + RAZ/章节书
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STAGE 3 ================= -->
+  <section id="s3" class="stage">
+    <div class="stage-head">
+      <div class="dot" style="background:#d97706"></div>
+      <div class="stage-title">
+        <h3>第3年 · FCE年（10–11岁）</h3>
+        <div class="sub">学术阅读+议论文结构，目标FCE通过</div>
+      </div>
+      <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+    <div class="stage-body">
+      <div class="goal-bar">
+        <div class="goal-chip"><span>每日投入</span>90分钟</div>
+        <div class="goal-chip"><span>外教</span>2次×30分钟/周</div>
+        <div class="goal-chip"><span>阶段证书</span>FCE通过</div>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <h4>📚 学习内容</h4>
+          <ul>
+            <li><strong>词汇：</strong>FCE 4000–6000词，学术词表、搭配</li>
+            <li><strong>语法：</strong>系统语法复盘，长难句、连接词、正式/非正式表达</li>
+            <li><strong>阅读：</strong>FCE阅读、科普/人文短文、新闻</li>
+            <li><strong>听力：</strong>FCE听力、TED-Ed、播客</li>
+            <li><strong>口语：</strong>观点讨论、利弊分析、合作任务</li>
+            <li><strong>写作：</strong>每周2次，180–220词观点文/邮件/报告</li>
+            <li><strong>体育英语：</strong>写英文训练日记3–5句/周</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h4>📖 教材配置</h4>
+          <ul>
+            <li><strong>主教材：</strong>Complete First for Schools 或 Prepare Level 6–7</li>
+            <li><strong>词汇：</strong>FCE核心词汇；English Vocabulary in Use Upper-intermediate</li>
+            <li><strong>语法：</strong>Grammar in Use Intermediate</li>
+            <li><strong>阅读：</strong>Reading Explorer 3–4；新闻简讯；适龄章节书</li>
+            <li><strong>听力/口语：</strong>FCE听力真题；TED-Ed；外教30分钟</li>
+            <li><strong>写作：</strong>Great Writing 2–3；外教批改</li>
+            <li><strong>真题：</strong>Cambridge First for Schools Authentic Practice Tests 1–2</li>
+          </ul>
+        </div>
+
+        <div class="block full">
+          <h4>🗓 每周安排</h4>
+          <ul>
+            <li><strong>晨听：</strong>15分钟×5</li>
+            <li><strong>阅读：</strong>30分钟×5</li>
+            <li><strong>晚上：</strong>25分钟×5（周一三写作，周二四口语，周五语法错题）</li>
+            <li><strong>外教：</strong>2次×30分钟</li>
+            <li><strong>周六：</strong>FCE真题部分或项目</li>
+            <li><strong>周日：</strong>复盘</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="result">
+        <h4>✅ 具体结果（验收标准）</h4>
+        <ul>
+          <li>FCE真题通过</li>
+          <li>词汇4000–6000</li>
+          <li>蓝思900–1100L</li>
+          <li>能写180–220词结构清楚的观点文</li>
+          <li>口语能讨论利弊、给建议、回应追问</li>
+          <li>每季度1次FCE模考+写作批改</li>
+        </ul>
+      </div>
+
+      <div class="buy">
+        <strong>🛒 最小购买清单</strong>
+        Complete First for Schools + FCE核心词汇 + Grammar in Use Intermediate + Reading Explorer 3–4 + FCE真题1–2
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STAGE 4 ================= -->
+  <section id="s4" class="stage">
+    <div class="stage-head">
+      <div class="dot" style="background:#dc2626"></div>
+      <div class="stage-title">
+        <h3>第4年 · 雅思冲刺年（11–12岁）</h3>
+        <div class="sub">四科题型+模考，冲刺模考7.0–7.5</div>
+      </div>
+      <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+    <div class="stage-body">
+      <div class="goal-bar">
+        <div class="goal-chip"><span>每日投入</span>90–120分钟</div>
+        <div class="goal-chip"><span>外教</span>2次×30–40分钟/周</div>
+        <div class="goal-chip"><span>阶段目标</span>模考6.5→7.0→7.5</div>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <h4>📚 学习内容</h4>
+          <ul>
+            <li><strong>雅思四科题型：</strong>听力填空/选择、阅读判断/匹配、写作Task1/Task2、口语Part1–3</li>
+            <li><strong>词汇：</strong>8000+，学术词+同义替换</li>
+            <li><strong>写作：</strong>每周2–3次，Task2 250词，限时训练</li>
+            <li><strong>口语：</strong>每周2次外教模考，录音复盘</li>
+            <li><strong>听力阅读：</strong>每周1套真题，错题归类</li>
+            <li><strong>体育英语：</strong>不额外加，融入口语素材</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h4>📖 教材配置</h4>
+          <ul>
+            <li><strong>主教材：</strong>Official Cambridge Guide to IELTS + IELTS Trainer</li>
+            <li><strong>词汇：</strong>Vocabulary for IELTS；自制雅思同义替换表</li>
+            <li><strong>语法：</strong>Grammar for IELTS</li>
+            <li><strong>阅读/听力：</strong>Cambridge IELTS 15–19；Reading Explorer 5；BBC 6 Minute English</li>
+            <li><strong>写作：</strong>Collins Writing for IELTS；外教或专业批改</li>
+            <li><strong>口语：</strong>外教模考+录音复盘，不买模板书</li>
+            <li><strong>真题：</strong>Cambridge IELTS 15–19；每周1套模考</li>
+          </ul>
+        </div>
+
+        <div class="block full">
+          <h4>🗓 每周安排</h4>
+          <ul>
+            <li><strong>晨听：</strong>15分钟×5</li>
+            <li><strong>阅读/听力：</strong>交替30分钟×5</li>
+            <li><strong>晚上：</strong>30分钟×5（写作2次、口语2次、错题1次）</li>
+            <li><strong>外教：</strong>2次×30–40分钟</li>
+            <li><strong>周六：</strong>整套模考或半套</li>
+            <li><strong>周日：</strong>复盘+弱项修补</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="result">
+        <h4>✅ 具体结果（验收标准）</h4>
+        <ul>
+          <li>11岁末雅思模考6.0–6.5</li>
+          <li>12岁前模考6.5→7.0→7.5</li>
+          <li>词汇8000+</li>
+          <li>蓝思1100–1300L</li>
+          <li>写作250词结构清楚、论证有逻辑</li>
+          <li>口语能连续说2–3分钟并回应追问</li>
+          <li>形成写作集、口语录音、模考成绩单</li>
+        </ul>
+      </div>
+
+      <div class="buy">
+        <strong>🛒 最小购买清单</strong>
+        Official Cambridge Guide + Cambridge IELTS 15–19 + Vocabulary for IELTS + Grammar for IELTS + 外教模考批改
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RULES ================= -->
+  <section id="rules" class="panel">
+    <h2>🔁 季度复盘与调整规则</h2>
+    <div class="grid">
+      <div class="block">
+        <h4>📋 每3个月评估</h4>
+        <ul>
+          <li>蓝思测试</li>
+          <li>剑桥分级/真题</li>
+          <li>写作样本1篇</li>
+          <li>口语录音1段</li>
+          <li>睡眠/情绪/运动出勤问卷</li>
+        </ul>
+      </div>
+      <div class="block">
+        <h4>🔧 调整规则</h4>
+        <ul>
+          <li>连续两次评估停滞 → 换材料、加口语、减语法刷题</li>
+          <li>睡眠连续两周&lt;9小时 → 砍任务不砍睡眠</li>
+          <li>英语明显排斥 → 降量、换成运动/故事主题</li>
+          <li>腰旗比赛冲突 → 英语保底每天30分钟，周末补</li>
+        </ul>
+      </div>
+      <div class="block full">
+        <h4>⚠️ 购买与使用提醒</h4>
+        <ul>
+          <li>每阶段只买“主教材+真题+分级阅读”三样，词汇语法书可借可买，不用囤</li>
+          <li>真题最贵也最有用：留到考前3–6个月再刷，别提前做完</li>
+          <li>外教和写作批改比多买书重要：口语录音复盘、写作有人改，进步最快</li>
+          <li>教材版本会更新：买最新版；Prepare、Complete、Cambridge Authentic Practice Tests 都有新版</li>
+          <li>体育英语不买教材：自制术语卡+英文训练日记+“用英语介绍一场比赛”即可</li>
+          <li>如果孩子已有PET水平：0阶段和第1年可压缩，直接从第2年PET开始，但真题和写作批改不能省</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      <h3>一句话总结</h3>
+      0阶段拼读+分级，每天5新词15复习，晨听/阅读/口语写作/睡前四段固定；KET用Prepare/Complete Key+KET真题；PET用Prepare/Complete Preliminary+PET真题；FCE用Complete First+Reading Explorer+FCE真题；雅思用Official Guide+Cambridge IELTS 15–19+外教批改。每阶段最小购买清单已列，按需买，不囤书。
+    </div>
+  </section>
+
+</div>
+
+<script>
+  // Accordion
+  document.querySelectorAll('.stage-head').forEach(function(head){
+    head.addEventListener('click', function(){
+      head.parentElement.classList.toggle('open');
+    });
+  });
+
+  // Nav active + scroll
+  var navBtns = document.querySelectorAll('.nav-btn');
+  navBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var target = document.getElementById(btn.dataset.target);
+      if(target){
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+        if(target.classList.contains('stage') && !target.classList.contains('open')){
+          target.classList.add('open');
+        }
+      }
+      navBtns.forEach(function(b){b.classList.remove('active')});
+      btn.classList.add('active');
+    });
+  });
+
+  // Scroll spy
+  var sections = ['overview','principles','s0','daily','s1','s2','s3','s4','rules'].map(function(id){
+    return document.getElementById(id);
+  });
+  window.addEventListener('scroll', function(){
+    var pos = window.scrollY + 120;
+    var current = 'overview';
+    sections.forEach(function(sec){
+      if(sec && sec.offsetTop <= pos) current = sec.id;
+    });
+    navBtns.forEach(function(b){
+      b.classList.toggle('active', b.dataset.target === current);
+    });
+  }, {passive:true});
+</script>
+</body>
+</html>
